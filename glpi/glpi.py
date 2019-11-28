@@ -737,7 +737,7 @@ class GLPI(object):
             # build searchtype argument
             # -> optional! defaults to "contains" on the server if empty
             if 'searchtype' in c and c['searchtype'] is not None:
-                uri = (uri + "&criteria[%d][searchtype]=%s".format(idx,
+                uri = (uri + "&criteria[%d][searchtype]=%s" % (idx,
                        c['searchtype']))
             else:
                 uri = uri + "&criteria[%d][searchtype]=" % (idx)
